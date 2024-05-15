@@ -2,6 +2,11 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Card from "../../components/Card";
 import { cardInfoList } from "./constant";
+import Course from "../../components/Course";
+import HowItWork from "../../components/HowItWork";
+import Plan from "../../components/Plan";
+import { GoSearch } from "react-icons/go";
+
 
 const menuList = [
     {name:'Home', icon:false},
@@ -64,8 +69,8 @@ const Home  = () => {
     </div>
                     </div>
                     <div>
-                        <div className="flex items-center my-5 gap-3">
-                            <h1 className="text-14 font-[600]">Sponsored by :</h1>
+                        <div className="flex items-center my-5 gap-2">
+                            <h1 className="text-12 font-[600]">Sponsored by :</h1>
                             <div className="flex items-center gap-4">
                             <img src="/images/paypal.png" />
                             <img src="/images/google.png" />
@@ -105,26 +110,28 @@ const Home  = () => {
                 <div className="flex px-24">
                     <div className="flex-1 mt-10">
                     <div className="shadow-md flex justify-center px-5 items-center w-36 h-48">
-                        <div>
-                         <h1>80 K+</h1>
+                        <div className="text-center">
+                         <h1 className="text-orange text-20 font-[700]">80 K+</h1>
                          <span>we have more than students</span>
                         </div>
                     </div>
                     <div className="shadow-md flex justify-center items-center w-36 h-48">
-                         <h1>90+</h1>
+                        <div className="text-center">
+                         <h1 className="text-[#FA578E] text-20 font-[700]">90+</h1>
                          <span>Daily upload blog post maintain</span>
+                        </div>
                     </div>
                     </div>
                     <div className="flex-1">
                     <div className="shadow-md flex items-center w-36 h-48">
-                        <div>
-                         <h1>150+</h1>
+                        <div className="text-center">
+                         <h1 className="text-[#FF753A] text-20 font-[700]">150+</h1>
                          <span>Free online tutorials video available</span>
                         </div>
                     </div>
                     <div className="shadow-md flex items-center w-36 h-48">
                         <div>
-                         <h1>& 3M</h1>
+                         <h1 className="text-[#E682FF] text-20 font-[700]" >& 3M</h1>
                          <span>Jobs posted everydays with qualification</span>
                         </div>
                     </div>
@@ -145,6 +152,15 @@ const Home  = () => {
             </div>
         </div>
         </div>
+        <div>
+            <Course />
+        </div>
+        <div>
+            <HowItWork />
+        </div>  
+        {/* <div>
+            <Plan />
+        </div> */}
         <div className="text-center">  
         <Footer />
         </div>
